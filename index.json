@@ -1,0 +1,791 @@
+{
+  "expires": "2026-12-11T11:28:25Z",
+  "generated": "2026-11-11T11:28:25Z",
+  "mirrors": [
+    "https://splify2.github.io/plugins/",
+    "https://cdn.jsdelivr.net/gh/splify2/plugins@gh-pages/"
+  ],
+  "plugins": {
+    "awg": {
+      "description": "Туннели WireGuard и AmneziaWG: допуск вида awg, системные пакеты и ядерные модули (код вида — в ядре)",
+      "key_role": "protocols",
+      "license": "GPL-3.0-only",
+      "name": "AmneziaWG",
+      "tags": [
+        "library"
+      ],
+      "type": "plugin",
+      "versions": [
+        {
+          "assets": {
+            "all": {
+              "installed": 1124,
+              "path": "awg/2.1.0/awg-2.1.0-all.s2p",
+              "sha256": "43257b9bb36f3ebb882b19b75db0b7132343ee6185f3c9d4a8ef82ddbb6529e6",
+              "size": 1090
+            }
+          },
+          "compat": {
+            "steer-api": "^1.0"
+          },
+          "provides": {
+            "kinds": [
+              "awg"
+            ]
+          },
+          "released": "2026-11-11T11:28:25Z",
+          "requires": {
+            "kernel": [
+              "/sys/module/wireguard|/sys/module/amneziawg"
+            ],
+            "system": [
+              "kmod-amneziawg|kmod-wireguard"
+            ]
+          },
+          "version": "2.1.0"
+        }
+      ]
+    },
+    "hysteria2": {
+      "default": true,
+      "description": "Туннели hysteria2 (QUIC, Brutal)",
+      "key_role": "protocols",
+      "license": "GPL-3.0-only",
+      "name": "hysteria2",
+      "tags": [
+        "protocol"
+      ],
+      "type": "plugin",
+      "versions": [
+        {
+          "assets": {
+            "aarch64_cortex-a53": {
+              "installed": 107033,
+              "path": "hysteria2/2.1.0/hysteria2-2.1.0-aarch64_cortex-a53.s2p",
+              "sha256": "cbd22a5e900671ff758972661d30a34d55cc3472d6726b23a59f0295b769cbe5",
+              "size": 57032
+            },
+            "aarch64_cortex-a72": {
+              "installed": 104969,
+              "path": "hysteria2/2.1.0/hysteria2-2.1.0-aarch64_cortex-a72.s2p",
+              "sha256": "04a5e933ef1bf8473522dcdbe9dca048b7b72dd1b8cdab9f5135a0ada385a944",
+              "size": 55062
+            },
+            "aarch64_cortex-a73": {
+              "installed": 104969,
+              "path": "hysteria2/2.1.0/hysteria2-2.1.0-aarch64_cortex-a73.s2p",
+              "sha256": "df8fc5c8ebe9ebbc94b3e1cbe271d14ec6be1f5d546539a5955276e85028ae0f",
+              "size": 55034
+            },
+            "aarch64_generic": {
+              "installed": 102825,
+              "path": "hysteria2/2.1.0/hysteria2-2.1.0-aarch64_generic.s2p",
+              "sha256": "7cc675944013748677533a59e858880b49c0753ce18eae397187e2630b87c651",
+              "size": 54780
+            },
+            "arm_cortex-a7_neon-vfpv4": {
+              "installed": 135313,
+              "path": "hysteria2/2.1.0/hysteria2-2.1.0-arm_cortex-a7_neon-vfpv4.s2p",
+              "sha256": "1d1667eabee9392df809cd00fd9ca815d17717b6bcd41e8295af7f113f27f2ca",
+              "size": 75750
+            },
+            "arm_cortex-a9": {
+              "installed": 136237,
+              "path": "hysteria2/2.1.0/hysteria2-2.1.0-arm_cortex-a9.s2p",
+              "sha256": "5b638cec46aaa4284584ffadaae44915acf6d21e6e3dc7d07bcb21aee4e5e1dc",
+              "size": 76016
+            },
+            "arm_cortex-a9_neon": {
+              "installed": 135857,
+              "path": "hysteria2/2.1.0/hysteria2-2.1.0-arm_cortex-a9_neon.s2p",
+              "sha256": "b5073008ced62141486fe5db8a2dff8be8f717125027bb7939a63b99f2640bb7",
+              "size": 76003
+            },
+            "arm_cortex-a9_vfpv3-d16": {
+              "installed": 135857,
+              "path": "hysteria2/2.1.0/hysteria2-2.1.0-arm_cortex-a9_vfpv3-d16.s2p",
+              "sha256": "aa296fdf3f19d86e8e7d214989f2b28a97204b87f9b49aad9237277eea51f0bc",
+              "size": 76002
+            },
+            "mips_24kc": {
+              "installed": 219585,
+              "path": "hysteria2/2.1.0/hysteria2-2.1.0-mips_24kc.s2p",
+              "sha256": "a04b64ea5b37b38f0d1e8a7aacf90d4d869bf6e92fc222ed2f6a437808b38afb",
+              "size": 96502
+            },
+            "mipsel_24kc": {
+              "installed": 219489,
+              "path": "hysteria2/2.1.0/hysteria2-2.1.0-mipsel_24kc.s2p",
+              "sha256": "54a06c47eb42c49d5bebc6ae337c6d7292a7936ccc65e11374524f9f7eccf311",
+              "size": 96020
+            },
+            "x86_64": {
+              "installed": 110273,
+              "path": "hysteria2/2.1.0/hysteria2-2.1.0-x86_64.s2p",
+              "sha256": "cfda85749914261d9ac6438c6aaae740346bf3fe345238a513daecd4475323fb",
+              "size": 56267
+            }
+          },
+          "compat": {
+            "steer-api": "^1.1"
+          },
+          "provides": {
+            "commands": [
+              "hysteria2-nodes",
+              "hysteria2-probe"
+            ],
+            "kinds": [
+              "tunnel:hysteria2"
+            ]
+          },
+          "released": "2026-11-11T11:28:25Z",
+          "requires": {
+            "kernel": [
+              "/dev/net/tun"
+            ],
+            "plugins": {
+              "net1": "^1.4"
+            },
+            "system": [
+              "kmod-tun"
+            ]
+          },
+          "version": "2.1.0"
+        }
+      ]
+    },
+    "net1": {
+      "description": "Общая библиотека протоколов: wolfSSL (внутри, скрыт), TLS 1.3 и REALITY, HTTP/2, QUIC, транспорты, стек TUN",
+      "key_role": "protocols",
+      "license": "GPL-3.0-only",
+      "name": "Сетевой стек туннелей",
+      "tags": [
+        "library"
+      ],
+      "type": "library",
+      "versions": [
+        {
+          "assets": {
+            "aarch64_cortex-a53": {
+              "installed": 1269873,
+              "path": "net1/1.4.0/net1-1.4.0-aarch64_cortex-a53.s2p",
+              "sha256": "47ed97b473f3af25878121d2f60ec92c584c11b84be046af5e71eedd5f4bfe84",
+              "size": 698288
+            },
+            "aarch64_cortex-a72": {
+              "installed": 1216321,
+              "path": "net1/1.4.0/net1-1.4.0-aarch64_cortex-a72.s2p",
+              "sha256": "ddd37d9c363bd2af15aee6080881ac17c5bb7cec4de7c48b2e69971fc52e9dc1",
+              "size": 656827
+            },
+            "aarch64_cortex-a73": {
+              "installed": 1216321,
+              "path": "net1/1.4.0/net1-1.4.0-aarch64_cortex-a73.s2p",
+              "sha256": "2fa9ba94ce42e12cd74642efbf231a61d0183b9b84fe20db01ff06393f633fe6",
+              "size": 656834
+            },
+            "aarch64_generic": {
+              "installed": 1192081,
+              "path": "net1/1.4.0/net1-1.4.0-aarch64_generic.s2p",
+              "sha256": "f947ee7968b471f455a5cb767fcce79b9ec235e383c90e5abec499107196ab09",
+              "size": 657702
+            },
+            "arm_cortex-a7_neon-vfpv4": {
+              "installed": 1098149,
+              "path": "net1/1.4.0/net1-1.4.0-arm_cortex-a7_neon-vfpv4.s2p",
+              "sha256": "f650075aaedac49f5e57aae37e29633074403cf22514c67f50f004eb72e042fb",
+              "size": 632090
+            },
+            "arm_cortex-a9": {
+              "installed": 1103221,
+              "path": "net1/1.4.0/net1-1.4.0-arm_cortex-a9.s2p",
+              "sha256": "fcb8e2885141937187ddd273163e5550a2e0c8265e058c6b923cfc0ed1e57d00",
+              "size": 631268
+            },
+            "arm_cortex-a9_neon": {
+              "installed": 1103221,
+              "path": "net1/1.4.0/net1-1.4.0-arm_cortex-a9_neon.s2p",
+              "sha256": "52e0ae7703cee641b028b5012b42a7701b71d6b0b469785b54027cc1a449f4c6",
+              "size": 631266
+            },
+            "arm_cortex-a9_vfpv3-d16": {
+              "installed": 1103221,
+              "path": "net1/1.4.0/net1-1.4.0-arm_cortex-a9_vfpv3-d16.s2p",
+              "sha256": "6ba0d55ee05b95b65cb1f344fe386afd5affdf09dd8f1bc04e7b4db560298b2e",
+              "size": 631268
+            },
+            "mips_24kc": {
+              "installed": 1529453,
+              "path": "net1/1.4.0/net1-1.4.0-mips_24kc.s2p",
+              "sha256": "f46ea7e373d4cbb74a08da9f9a1c63c08f4dbaea81e6ac029040d9d1d4c812c1",
+              "size": 697502
+            },
+            "mipsel_24kc": {
+              "installed": 1528805,
+              "path": "net1/1.4.0/net1-1.4.0-mipsel_24kc.s2p",
+              "sha256": "1f4280b7c13c91cfc58842d8a206a7306693811fb834aaa717e50a4ac3ff51c2",
+              "size": 693679
+            },
+            "x86_64": {
+              "installed": 1294305,
+              "path": "net1/1.4.0/net1-1.4.0-x86_64.s2p",
+              "sha256": "06fda5802c32dde609624c2475f8c8314d4047330d5da9c64c4eddbfa1baad60",
+              "size": 665406
+            }
+          },
+          "compat": {
+            "steer-api": "^1.1"
+          },
+          "provides": {
+            "libs": [
+              "libs2p-net.so.1"
+            ]
+          },
+          "released": "2026-11-11T11:28:25Z",
+          "version": "1.4.0"
+        }
+      ]
+    },
+    "obfs": {
+      "default": true,
+      "description": "WireGuard поверх поддельного TCP для выходов interface",
+      "key_role": "protocols",
+      "license": "GPL-3.0-only",
+      "name": "Обфускатор WireGuard",
+      "tags": [
+        "protocol"
+      ],
+      "type": "plugin",
+      "versions": [
+        {
+          "assets": {
+            "aarch64_cortex-a53": {
+              "installed": 107511,
+              "path": "obfs/2.1.0/obfs-2.1.0-aarch64_cortex-a53.s2p",
+              "sha256": "f225f46705790f5e9824ec4976ddb9c95da82f0fdb3bea1abb4d3cfea20366fa",
+              "size": 65338
+            },
+            "aarch64_cortex-a72": {
+              "installed": 101399,
+              "path": "obfs/2.1.0/obfs-2.1.0-aarch64_cortex-a72.s2p",
+              "sha256": "ef27307a4f15342013ddc2c6b7b71318ab720155e68a23c717f0c14dc6512855",
+              "size": 61146
+            },
+            "aarch64_cortex-a73": {
+              "installed": 101399,
+              "path": "obfs/2.1.0/obfs-2.1.0-aarch64_cortex-a73.s2p",
+              "sha256": "ab57891c8ee90747ef58c97171971594dc952cd59f64adfd062d5cbcda793374",
+              "size": 61145
+            },
+            "aarch64_generic": {
+              "installed": 99687,
+              "path": "obfs/2.1.0/obfs-2.1.0-aarch64_generic.s2p",
+              "sha256": "99e75aac4323db1bc6ee6f52bc7c4dbf154e4f58967190ce88d35c6ccd277214",
+              "size": 61436
+            },
+            "arm_cortex-a7_neon-vfpv4": {
+              "installed": 94239,
+              "path": "obfs/2.1.0/obfs-2.1.0-arm_cortex-a7_neon-vfpv4.s2p",
+              "sha256": "5af839b13bd024f7cbebfcbb20e3c7813de0a5cc2ed8a7dadb22624a9ac71f6d",
+              "size": 56141
+            },
+            "arm_cortex-a9": {
+              "installed": 95123,
+              "path": "obfs/2.1.0/obfs-2.1.0-arm_cortex-a9.s2p",
+              "sha256": "cf200df31b15e35a17e78d4474b7845c53f21e37cbe10a93e11d80041e81d0e5",
+              "size": 56415
+            },
+            "arm_cortex-a9_neon": {
+              "installed": 95003,
+              "path": "obfs/2.1.0/obfs-2.1.0-arm_cortex-a9_neon.s2p",
+              "sha256": "1d08ae6b53d94a6617cc55caad172956e49cb2632016ee2da116f310f9eec94b",
+              "size": 56335
+            },
+            "arm_cortex-a9_vfpv3-d16": {
+              "installed": 95003,
+              "path": "obfs/2.1.0/obfs-2.1.0-arm_cortex-a9_vfpv3-d16.s2p",
+              "sha256": "f4169d6ca39f6e22fbd645f4656d57ab14b1971e4d367e68c1de53c0bfcb6c54",
+              "size": 56330
+            },
+            "mips_24kc": {
+              "installed": 156799,
+              "path": "obfs/2.1.0/obfs-2.1.0-mips_24kc.s2p",
+              "sha256": "69eab7e0d815f1ca7760ebf142b05ba3b09b1c0fedb3c63c368e222389bab591",
+              "size": 70600
+            },
+            "mipsel_24kc": {
+              "installed": 156719,
+              "path": "obfs/2.1.0/obfs-2.1.0-mipsel_24kc.s2p",
+              "sha256": "e7c687c753bc9e58f203f8a06d6de403afcc0b0ef1037b2862e1b448ae21bc5a",
+              "size": 69991
+            },
+            "x86_64": {
+              "installed": 92607,
+              "path": "obfs/2.1.0/obfs-2.1.0-x86_64.s2p",
+              "sha256": "e8ef1f32198cb14dc3aed80dc6994af83e8e435c4c473b94cdda668fa4dee68f",
+              "size": 54054
+            }
+          },
+          "compat": {
+            "steer-api": "^1.1"
+          },
+          "provides": {
+            "commands": [
+              "obfs-server"
+            ],
+            "kinds": [
+              "interface"
+            ]
+          },
+          "released": "2026-11-11T11:28:25Z",
+          "version": "2.1.0"
+        }
+      ]
+    },
+    "proxy": {
+      "default": true,
+      "description": "Туннели trojan, shadowsocks, socks, http и vmess",
+      "key_role": "protocols",
+      "license": "GPL-3.0-only",
+      "name": "Прокси",
+      "tags": [
+        "protocol"
+      ],
+      "type": "plugin",
+      "versions": [
+        {
+          "assets": {
+            "aarch64_cortex-a53": {
+              "installed": 100888,
+              "path": "proxy/2.1.0/proxy-2.1.0-aarch64_cortex-a53.s2p",
+              "sha256": "55bb5718b666f30873ef18406a91c9bbee3f6c1462906cfcb7e9e5e904abd570",
+              "size": 45543
+            },
+            "aarch64_cortex-a72": {
+              "installed": 100600,
+              "path": "proxy/2.1.0/proxy-2.1.0-aarch64_cortex-a72.s2p",
+              "sha256": "a73fe5eb83394da9a68d3f7a4f1852c25a432f4f77170104a089e94e28fb632d",
+              "size": 44878
+            },
+            "aarch64_cortex-a73": {
+              "installed": 100600,
+              "path": "proxy/2.1.0/proxy-2.1.0-aarch64_cortex-a73.s2p",
+              "sha256": "97b7b80d6574210dffac6a98defa117dea670c3bac171c55d79c6353206657f5",
+              "size": 44876
+            },
+            "aarch64_generic": {
+              "installed": 99032,
+              "path": "proxy/2.1.0/proxy-2.1.0-aarch64_generic.s2p",
+              "sha256": "eba8a022a31d1e1403c168b711116e44da3de618ad0e1921259dd5687c67eaa2",
+              "size": 45065
+            },
+            "arm_cortex-a7_neon-vfpv4": {
+              "installed": 126084,
+              "path": "proxy/2.1.0/proxy-2.1.0-arm_cortex-a7_neon-vfpv4.s2p",
+              "sha256": "c658e2eb3b5155bbf96f4d91951051ef543d96e04f70891e5bb62547289556e9",
+              "size": 63654
+            },
+            "arm_cortex-a9": {
+              "installed": 126544,
+              "path": "proxy/2.1.0/proxy-2.1.0-arm_cortex-a9.s2p",
+              "sha256": "f7c3a815cb5e19b6f26e464be2cf9b659fe9d520415a59ea1f0c329d03909144",
+              "size": 63646
+            },
+            "arm_cortex-a9_neon": {
+              "installed": 126164,
+              "path": "proxy/2.1.0/proxy-2.1.0-arm_cortex-a9_neon.s2p",
+              "sha256": "8bdd83a91d91c7da0b43dcd06ab197b54b836d5cfeabd525ffd36cf6ce931525",
+              "size": 63617
+            },
+            "arm_cortex-a9_vfpv3-d16": {
+              "installed": 126164,
+              "path": "proxy/2.1.0/proxy-2.1.0-arm_cortex-a9_vfpv3-d16.s2p",
+              "sha256": "e32c6eb36dea42d4a30005877f8b63ceed6fd220d405f934dd8887ac75ebce38",
+              "size": 63617
+            },
+            "mips_24kc": {
+              "installed": 206200,
+              "path": "proxy/2.1.0/proxy-2.1.0-mips_24kc.s2p",
+              "sha256": "56cc1d47feada0d5274561eda5544a66a7b848150c45a63710ae3090d47b2997",
+              "size": 83722
+            },
+            "mipsel_24kc": {
+              "installed": 206232,
+              "path": "proxy/2.1.0/proxy-2.1.0-mipsel_24kc.s2p",
+              "sha256": "a3d84bfad3c1786bf01000880e09460059ba7fea8b35239f9c28cf53f5d91b61",
+              "size": 83108
+            },
+            "x86_64": {
+              "installed": 106688,
+              "path": "proxy/2.1.0/proxy-2.1.0-x86_64.s2p",
+              "sha256": "ef6707f4d1e3fb939d107d4f8ec7bde497933551a8b8ef350090ab4f78577fef",
+              "size": 47005
+            }
+          },
+          "compat": {
+            "steer-api": "^1.1"
+          },
+          "provides": {
+            "commands": [
+              "proxy-nodes",
+              "proxy-probe"
+            ],
+            "kinds": [
+              "tunnel:http",
+              "tunnel:shadowsocks",
+              "tunnel:socks",
+              "tunnel:trojan",
+              "tunnel:vmess"
+            ]
+          },
+          "released": "2026-11-11T11:28:25Z",
+          "requires": {
+            "kernel": [
+              "/dev/net/tun"
+            ],
+            "plugins": {
+              "net1": "^1.4"
+            },
+            "system": [
+              "kmod-tun"
+            ]
+          },
+          "version": "2.1.0"
+        }
+      ]
+    },
+    "vless": {
+      "default": true,
+      "description": "Туннели VLESS и Reality",
+      "key_role": "protocols",
+      "license": "GPL-3.0-only",
+      "name": "VLESS",
+      "tags": [
+        "protocol"
+      ],
+      "type": "plugin",
+      "versions": [
+        {
+          "assets": {
+            "aarch64_cortex-a53": {
+              "installed": 136019,
+              "path": "vless/2.1.0/vless-2.1.0-aarch64_cortex-a53.s2p",
+              "sha256": "6b4c59471246597244a91658a9403bf50ff7c6dde33f23fc26afeca05cd31e1b",
+              "size": 73009
+            },
+            "aarch64_cortex-a72": {
+              "installed": 127827,
+              "path": "vless/2.1.0/vless-2.1.0-aarch64_cortex-a72.s2p",
+              "sha256": "6bc58a082dfe1c73f194bc71776fbfd1ba248d0e1203c90da7bb29f6fcf237a9",
+              "size": 67723
+            },
+            "aarch64_cortex-a73": {
+              "installed": 127827,
+              "path": "vless/2.1.0/vless-2.1.0-aarch64_cortex-a73.s2p",
+              "sha256": "a87df438fdef999faa55a669fc0d56fecd3c593fbd11ff815747f7f99b466647",
+              "size": 67724
+            },
+            "aarch64_generic": {
+              "installed": 125603,
+              "path": "vless/2.1.0/vless-2.1.0-aarch64_generic.s2p",
+              "sha256": "02b2192d732fd3217fc966d5e36321c7e14eea7fc6fde9e36eb4c2b9fa5ddcd3",
+              "size": 67762
+            },
+            "arm_cortex-a7_neon-vfpv4": {
+              "installed": 158395,
+              "path": "vless/2.1.0/vless-2.1.0-arm_cortex-a7_neon-vfpv4.s2p",
+              "sha256": "7efa54a93a7b32b6932e5290206c158e8b48726bedfabe3d738bed4479336e86",
+              "size": 85670
+            },
+            "arm_cortex-a9": {
+              "installed": 158871,
+              "path": "vless/2.1.0/vless-2.1.0-arm_cortex-a9.s2p",
+              "sha256": "c11df43ba6529dc3eab6a7c94e239fbad41ba831f4b4b157aba46b8bb0723a0c",
+              "size": 85565
+            },
+            "arm_cortex-a9_neon": {
+              "installed": 158475,
+              "path": "vless/2.1.0/vless-2.1.0-arm_cortex-a9_neon.s2p",
+              "sha256": "b35b4672c4e2d90a80634ca9d6055790ac16c22580b9ae8319c0aceb5c031630",
+              "size": 85562
+            },
+            "arm_cortex-a9_vfpv3-d16": {
+              "installed": 158475,
+              "path": "vless/2.1.0/vless-2.1.0-arm_cortex-a9_vfpv3-d16.s2p",
+              "sha256": "edc8a30be35dcbb8ef80771b2307d0ac697db66b9c3af51a1e52f7877fc521b2",
+              "size": 85564
+            },
+            "mips_24kc": {
+              "installed": 240551,
+              "path": "vless/2.1.0/vless-2.1.0-mips_24kc.s2p",
+              "sha256": "1e4d771ce22b8091f3367b702cafa318e921aede4a070e7d14396121f7e3f805",
+              "size": 104849
+            },
+            "mipsel_24kc": {
+              "installed": 240503,
+              "path": "vless/2.1.0/vless-2.1.0-mipsel_24kc.s2p",
+              "sha256": "8dea1b2f903b30d222c4d18acb752992e6a77c313588763672c57820a38d3a4f",
+              "size": 104137
+            },
+            "x86_64": {
+              "installed": 135491,
+              "path": "vless/2.1.0/vless-2.1.0-x86_64.s2p",
+              "sha256": "a555a777a5d00efa452040a44477bef7fc677093a645f493d2225720c3a54664",
+              "size": 68551
+            }
+          },
+          "compat": {
+            "steer-api": "^1.1"
+          },
+          "provides": {
+            "commands": [
+              "sub-check",
+              "sub-fetch",
+              "sub-quota",
+              "tls-probe",
+              "vless-nodes",
+              "vless-probe"
+            ],
+            "kinds": [
+              "tunnel:vless"
+            ]
+          },
+          "released": "2026-11-11T11:28:25Z",
+          "requires": {
+            "kernel": [
+              "/dev/net/tun"
+            ],
+            "plugins": {
+              "net1": "^1.4"
+            },
+            "system": [
+              "kmod-tun"
+            ]
+          },
+          "version": "2.1.0"
+        }
+      ]
+    },
+    "warpbox": {
+      "default": true,
+      "description": "Cloudflare WARP: регистрация, подбор точек входа, замена",
+      "key_role": "protocols",
+      "license": "GPL-3.0-only",
+      "name": "WARP",
+      "tags": [
+        "protocol"
+      ],
+      "type": "plugin",
+      "versions": [
+        {
+          "assets": {
+            "aarch64_cortex-a53": {
+              "installed": 140869,
+              "path": "warpbox/2.1.0/warpbox-2.1.0-aarch64_cortex-a53.s2p",
+              "sha256": "b195a01b85d020709f83e586cc8c366efa770094ec1efb229641035ed6dba6fc",
+              "size": 76368
+            },
+            "aarch64_cortex-a72": {
+              "installed": 134309,
+              "path": "warpbox/2.1.0/warpbox-2.1.0-aarch64_cortex-a72.s2p",
+              "sha256": "992120e593ee717cfaac64379af9b4df431fbfea8dc865c7808283283f52fa76",
+              "size": 72319
+            },
+            "aarch64_cortex-a73": {
+              "installed": 134309,
+              "path": "warpbox/2.1.0/warpbox-2.1.0-aarch64_cortex-a73.s2p",
+              "sha256": "e906b54ccc1223a7c0ca20e6a4cbda93424eb7bd9c0245610b5d2fa42606aded",
+              "size": 72320
+            },
+            "aarch64_generic": {
+              "installed": 131253,
+              "path": "warpbox/2.1.0/warpbox-2.1.0-aarch64_generic.s2p",
+              "sha256": "dd1feeca7e590a655d0de0542613058898ea402d3b4c23d04ca7326456c99d2d",
+              "size": 71671
+            },
+            "arm_cortex-a7_neon-vfpv4": {
+              "installed": 162817,
+              "path": "warpbox/2.1.0/warpbox-2.1.0-arm_cortex-a7_neon-vfpv4.s2p",
+              "sha256": "8cc9dd3c37cfd82f3b373682c181c2bb0a05e295a4ee3b9a7963f9d33e003274",
+              "size": 91172
+            },
+            "arm_cortex-a9": {
+              "installed": 163997,
+              "path": "warpbox/2.1.0/warpbox-2.1.0-arm_cortex-a9.s2p",
+              "sha256": "c87a8878601627487c57c82d059218f5637f31191b1b36492774895275f0fd4a",
+              "size": 91449
+            },
+            "arm_cortex-a9_neon": {
+              "installed": 163597,
+              "path": "warpbox/2.1.0/warpbox-2.1.0-arm_cortex-a9_neon.s2p",
+              "sha256": "2c7a5f14adb5c9357fab39be53dc794a5f47e589d1b1c1f19b69d46c97817a1f",
+              "size": 91418
+            },
+            "arm_cortex-a9_vfpv3-d16": {
+              "installed": 163597,
+              "path": "warpbox/2.1.0/warpbox-2.1.0-arm_cortex-a9_vfpv3-d16.s2p",
+              "sha256": "0427207ae8a27cf05b19e6647d2d4ec4e437f3e3d087a8c4d1f7cac7d7fc1073",
+              "size": 91413
+            },
+            "mips_24kc": {
+              "installed": 246505,
+              "path": "warpbox/2.1.0/warpbox-2.1.0-mips_24kc.s2p",
+              "sha256": "570a72ae60b7ca4129140c5fcc78f63839639cfa0bde20dd52238c006e6b5c39",
+              "size": 110216
+            },
+            "mipsel_24kc": {
+              "installed": 246569,
+              "path": "warpbox/2.1.0/warpbox-2.1.0-mipsel_24kc.s2p",
+              "sha256": "02a543ef423f10b1adcea1e02da70a4fda4e523b6c027ca88b17044f6e506862",
+              "size": 109441
+            },
+            "x86_64": {
+              "installed": 147237,
+              "path": "warpbox/2.1.0/warpbox-2.1.0-x86_64.s2p",
+              "sha256": "1f444a8d9848b514e202ff6eb2c88fc22a6c15109ce717b7419a71933a7f0ef4",
+              "size": 74638
+            }
+          },
+          "compat": {
+            "steer-api": "^1.1"
+          },
+          "provides": {
+            "commands": [
+              "warp-reg",
+              "warp-scan"
+            ],
+            "kinds": [
+              "warp"
+            ]
+          },
+          "released": "2026-11-11T11:28:25Z",
+          "requires": {
+            "plugins": {
+              "awg": "^2.1",
+              "net1": "^1.4"
+            },
+            "system": [
+              "kmod-tun"
+            ]
+          },
+          "version": "2.1.0"
+        }
+      ]
+    },
+    "xsteer": {
+      "default": true,
+      "description": "Звезда xsteer: клиент хаба",
+      "key_role": "protocols",
+      "license": "GPL-3.0-only",
+      "name": "xsteer",
+      "tags": [
+        "protocol"
+      ],
+      "type": "plugin",
+      "versions": [
+        {
+          "assets": {
+            "aarch64_cortex-a53": {
+              "installed": 132017,
+              "path": "xsteer/2.1.0/xsteer-2.1.0-aarch64_cortex-a53.s2p",
+              "sha256": "01cf75d733105d6e3019a71b148d5772bcce910188351eb712dc81ea3045ca0c",
+              "size": 69526
+            },
+            "aarch64_cortex-a72": {
+              "installed": 125713,
+              "path": "xsteer/2.1.0/xsteer-2.1.0-aarch64_cortex-a72.s2p",
+              "sha256": "4a7e535415e641593e53811911ff4bdb75b3868d87e28bf92e33f74143192c68",
+              "size": 65138
+            },
+            "aarch64_cortex-a73": {
+              "installed": 125713,
+              "path": "xsteer/2.1.0/xsteer-2.1.0-aarch64_cortex-a73.s2p",
+              "sha256": "3fdc7175e728ff1a9835b8de36f8176c1d9eaa48f85109c9462ee23741dbba2e",
+              "size": 65139
+            },
+            "aarch64_generic": {
+              "installed": 123921,
+              "path": "xsteer/2.1.0/xsteer-2.1.0-aarch64_generic.s2p",
+              "sha256": "8853df8d97479df5a0b8e8d57307d50aef111d80e81405deaf8d740c5ac801f5",
+              "size": 65404
+            },
+            "arm_cortex-a7_neon-vfpv4": {
+              "installed": 158585,
+              "path": "xsteer/2.1.0/xsteer-2.1.0-arm_cortex-a7_neon-vfpv4.s2p",
+              "sha256": "93c4dc40dca2de39d9f680c9bb46abbbaa6631fa5729851ebc1998e6382f8165",
+              "size": 86822
+            },
+            "arm_cortex-a9": {
+              "installed": 159365,
+              "path": "xsteer/2.1.0/xsteer-2.1.0-arm_cortex-a9.s2p",
+              "sha256": "772ae2c84de22e46c1c1a6dc5581ba1ec14fac87b799f8a14756a2fcb5d5defb",
+              "size": 86839
+            },
+            "arm_cortex-a9_neon": {
+              "installed": 158981,
+              "path": "xsteer/2.1.0/xsteer-2.1.0-arm_cortex-a9_neon.s2p",
+              "sha256": "b5f901d051f2d31c504cbd15fc894acec7499e39f679f3678a2187b3b9794522",
+              "size": 86839
+            },
+            "arm_cortex-a9_vfpv3-d16": {
+              "installed": 158981,
+              "path": "xsteer/2.1.0/xsteer-2.1.0-arm_cortex-a9_vfpv3-d16.s2p",
+              "sha256": "302f1944b89d6ce0ac097c9a603ce643ad064052f90ede13f4cfa681c06d0c44",
+              "size": 86838
+            },
+            "mips_24kc": {
+              "installed": 241857,
+              "path": "xsteer/2.1.0/xsteer-2.1.0-mips_24kc.s2p",
+              "sha256": "c549202da703b0d0bd075a76a15d7e45865382071d7831883d86854a2396b18b",
+              "size": 105542
+            },
+            "mipsel_24kc": {
+              "installed": 241825,
+              "path": "xsteer/2.1.0/xsteer-2.1.0-mipsel_24kc.s2p",
+              "sha256": "d00dc766338aedc19b69beb940a2be03e76f1dbfac4db0102e86260125c6e159",
+              "size": 104801
+            },
+            "x86_64": {
+              "installed": 133777,
+              "path": "xsteer/2.1.0/xsteer-2.1.0-x86_64.s2p",
+              "sha256": "c3ae7d5a1744b786155d4c02a055b3d3845cba5e86e847f5d4e7170127ea19be",
+              "size": 64553
+            }
+          },
+          "compat": {
+            "steer-api": "^1.1"
+          },
+          "provides": {
+            "commands": [
+              "xsteer-check",
+              "xsteer-key",
+              "xsteer-link",
+              "xsteer-peers"
+            ],
+            "kinds": [
+              "xsteer"
+            ]
+          },
+          "released": "2026-11-11T11:28:25Z",
+          "requires": {
+            "kernel": [
+              "/dev/net/tun"
+            ],
+            "plugins": {
+              "net1": "^1.4"
+            },
+            "system": [
+              "kmod-tun"
+            ]
+          },
+          "version": "2.1.0"
+        }
+      ]
+    }
+  },
+  "repo": {
+    "id": "splify2",
+    "name": "splify2"
+  },
+  "schema": 1
+}
